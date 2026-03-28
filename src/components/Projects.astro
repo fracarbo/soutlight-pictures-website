@@ -1,73 +1,50 @@
 ---
-const projects = [
-	{
-		title: 'The Shadows Within',
-		category: 'Horror Feature',
-		year: '2024',
-		image: 'https://images.pexels.com/photos/1666471/pexels-photo-1666471.jpeg?auto=compress&cs=tinysrgb&w=800'
-	},
-	{
-		title: 'Echoes of Silence',
-		category: 'Thriller Series',
-		year: '2024',
-		image: 'https://images.pexels.com/photos/2249528/pexels-photo-2249528.jpeg?auto=compress&cs=tinysrgb&w=800'
-	},
-	{
-		title: 'Nightmare Protocol',
-		category: 'Sci-Fi Horror',
-		year: '2023',
-		image: 'https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=800'
-	},
-	{
-		title: 'The Last Séance',
-		category: 'Supernatural',
-		year: '2023',
-		image: 'https://images.pexels.com/photos/1310532/pexels-photo-1310532.jpeg?auto=compress&cs=tinysrgb&w=800'
-	},
-	{
-		title: 'Dark Waters Rise',
-		category: 'Horror Feature',
-		year: '2023',
-		image: 'https://images.pexels.com/photos/1619569/pexels-photo-1619569.jpeg?auto=compress&cs=tinysrgb&w=800'
-	},
-	{
-		title: 'The Forgotten Room',
-		category: 'Mystery Thriller',
-		year: '2022',
-		image: 'https://images.pexels.com/photos/3593922/pexels-photo-3593922.jpeg?auto=compress&cs=tinysrgb&w=800'
-	}
-];
+import { projects } from '../data/projects';
+
+const featured = projects.slice(0, 3);
 ---
 
 <section id="projects" class="bg-black">
-	<div class="mb-16 px-6 pt-24 container mx-auto">
-		<h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">FEATURED WORK</h2>
-		<p class="text-xl text-gray-400">Stories that haunt, thrill, and inspire</p>
-	</div>
+  <div class="mb-16 px-6 pt-24 container mx-auto">
+    <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">FEATURED WORK</h2>
+    <p class="text-xl text-gray-400">Stories that haunt, thrill, and inspire</p>
+  </div>
 
-	<div class="space-y-1">
-		{projects.map((project, index) => (
-			<div class="group relative overflow-hidden cursor-pointer h-96 md:h-[500px]">
-				<img
-					src={project.image}
-					alt={project.title}
-					class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-				/>
-				<div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70 group-hover:opacity-80 transition-opacity"></div>
+  <div class="space-y-1">
+    {featured.map((project) => (
+      <div class="group relative overflow-hidden cursor-pointer h-96 md:h-[500px]">
+        <img
+          src={project.image}
+          alt={project.title}
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          loading="lazy"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70 group-hover:opacity-80 transition-opacity" />
 
-				<div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-end transform transition-all duration-500">
-					<p class="text-sm md:text-base text-gray-300 mb-2">{project.category} • {project.year}</p>
-					<h3 class="text-3xl md:text-5xl font-black tracking-tight mb-4 transform transition-transform duration-500 group-hover:-translate-y-1">{project.title}</h3>
-					<div class="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-						<span class="inline-flex items-center text-sm font-semibold hover:translate-x-1 transition-transform">
-							Learn More
-							<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-							</svg>
-						</span>
-					</div>
-				</div>
-			</div>
-		))}
-	</div>
+        <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+          <p class="text-sm md:text-base text-gray-300 mb-2">{project.category} &bull; {project.year}</p>
+          <h3 class="text-3xl md:text-5xl font-black tracking-tight mb-4 transition-transform duration-500 group-hover:-translate-y-1">
+            {project.title}
+          </h3>
+          <div class="opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+            <span class="inline-flex items-center text-sm font-semibold text-amber">
+              Learn More
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div class="container mx-auto px-6 py-16 text-center">
+    <a
+      href="/projects"
+      class="inline-block px-8 py-4 bg-amber text-black font-semibold rounded-full hover:bg-amber-dark transition-colors"
+    >
+      View All Projects
+    </a>
+  </div>
 </section>
