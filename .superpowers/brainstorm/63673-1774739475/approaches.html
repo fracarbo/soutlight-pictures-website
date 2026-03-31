@@ -1,0 +1,61 @@
+<h2>Due approcci per SouthLight Pictures</h2>
+<p class="subtitle">Stesso risultato finale, strategia diversa per arrivarci</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Rebrand & Restructure Incrementale</h3>
+      <p>Partiamo dal codice esistente. Rinominiamo tutto da Atomic Monster a SouthLight Pictures, poi aggiungiamo le pagine Film e Contact step by step. Meno rischioso, cambio graduale.</p>
+      <div style="margin-top: 12px; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+        <div style="font-size: 12px; color: #888; margin-bottom: 6px;">PASSI</div>
+        <div style="font-size: 13px; color: #aaa; line-height: 1.8;">
+          1. Rebrand (testi, titoli, meta)<br>
+          2. Aggiorna navigazione (Film, News, About, Contact)<br>
+          3. Trasforma Hero in video splash<br>
+          4. Crea pagina /film con lista full-bleed<br>
+          5. Aggiungi form di contatto<br>
+          6. Pulizia (elimina Welcome.astro, aggiorna footer)<br>
+          7. Polish e animazioni
+        </div>
+      </div>
+      <div style="margin-top: 10px;">
+        <div class="pros-cons" style="display: flex; gap: 16px;">
+          <div style="flex:1"><span style="color: #4ade80; font-size: 12px;">PRO:</span><span style="color: #aaa; font-size: 12px;"> Sicuro, progressivo, sempre funzionante</span></div>
+          <div style="flex:1"><span style="color: #f87171; font-size: 12px;">CON:</span><span style="color: #aaa; font-size: 12px;"> Più passaggi, potrebbe lasciare inconsistenze temporanee</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Riscrittura Completa dei Componenti</h3>
+      <p>Riscriviamo ogni componente da zero con il branding SouthLight, la struttura ibrida, e tutte le feature in un colpo. Risultato più coerente fin da subito.</p>
+      <div style="margin-top: 12px; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+        <div style="font-size: 12px; color: #888; margin-bottom: 6px;">PASSI</div>
+        <div style="font-size: 13px; color: #aaa; line-height: 1.8;">
+          1. Nuovo Layout.astro con meta SouthLight<br>
+          2. Nuovo Header con nav Film/News/About/Contact<br>
+          3. Nuova Hero con video splash placeholder<br>
+          4. Nuova homepage (hero + film highlights + about + contact)<br>
+          5. Nuova pagina /film con full-bleed list<br>
+          6. Nuovo Footer con branding SouthLight<br>
+          7. Elimina componenti non usati
+        </div>
+      </div>
+      <div style="margin-top: 10px;">
+        <div style="display: flex; gap: 16px;">
+          <div style="flex:1"><span style="color: #4ade80; font-size: 12px;">PRO:</span><span style="color: #aaa; font-size: 12px;"> Coerente fin da subito, nessun residuo Atomic Monster</span></div>
+          <div style="flex:1"><span style="color: #f87171; font-size: 12px;">CON:</span><span style="color: #aaa; font-size: 12px;"> Più lavoro in un singolo blocco</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 24px; padding: 16px; background: rgba(74, 222, 128, 0.05); border: 1px solid rgba(74, 222, 128, 0.15); border-radius: 8px;">
+  <div style="font-size: 13px; color: #4ade80; font-weight: 600; margin-bottom: 6px;">RACCOMANDAZIONE</div>
+  <div style="font-size: 13px; color: #aaa;">Approccio <strong style="color:#fff;">B — Riscrittura Completa</strong>. Il progetto è piccolo (6 componenti), il contenuto è mock, e non c'è nulla da preservare. Una riscrittura pulita evita di trascinare residui di Atomic Monster e produce un risultato coerente immediatamente.</div>
+</div>

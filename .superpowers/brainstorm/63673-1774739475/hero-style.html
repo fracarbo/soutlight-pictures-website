@@ -1,0 +1,83 @@
+<h2>Hero Section — Quale stile per SouthLight Pictures?</h2>
+<p class="subtitle">La prima impressione conta. Come vuoi che si presenti la homepage?</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #000; padding: 40px; min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <!-- Video bg simulation -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #0a0a0a 0%, #1a0a0a 30%, #0a0a1a 60%, #0a0a0a 100%); opacity: 0.8;"></div>
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(180,40,40,0.15) 0%, transparent 70%); filter: blur(20px);"></div>
+        <!-- Logo text -->
+        <div style="position: relative; z-index: 1; text-align: center;">
+          <div style="font-size: 11px; letter-spacing: 8px; color: #666; margin-bottom: 12px;">A PRODUCTION COMPANY</div>
+          <div style="font-size: 36px; font-weight: 900; letter-spacing: -1px; color: #fff;">SOUTHLIGHT</div>
+          <div style="font-size: 14px; letter-spacing: 6px; color: #888; margin-top: 4px;">PICTURES</div>
+        </div>
+        <!-- Play hint -->
+        <div style="position: relative; z-index: 1; margin-top: 30px;">
+          <div style="width: 50px; height: 50px; border: 2px solid rgba(255,255,255,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+            <div style="width: 0; height: 0; border-left: 12px solid rgba(255,255,255,0.5); border-top: 7px solid transparent; border-bottom: 7px solid transparent; margin-left: 3px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Video Splash (come Atomic Monster)</h3>
+      <p>Fullscreen video/animazione del logo come intro. Atmosfera cinematica. Richiede un video del logo da produrre.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #000; padding: 40px; min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <!-- Cinematic bg -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, #000 0%, #111 40%, #000 100%);"></div>
+        <div style="position: absolute; top: 20%; left: 15%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(200,60,20,0.08) 0%, transparent 70%); filter: blur(40px);"></div>
+        <div style="position: absolute; bottom: 20%; right: 15%; width: 250px; height: 250px; background: radial-gradient(circle, rgba(200,120,20,0.06) 0%, transparent 70%); filter: blur(40px);"></div>
+        <!-- Content -->
+        <div style="position: relative; z-index: 1; text-align: center;">
+          <div style="font-size: 42px; font-weight: 900; letter-spacing: -2px; color: #fff; line-height: 1;">SOUTHLIGHT</div>
+          <div style="font-size: 13px; letter-spacing: 6px; color: #777; margin-top: 6px;">PICTURES</div>
+          <div style="width: 40px; height: 1px; background: rgba(200,60,20,0.5); margin: 20px auto;"></div>
+          <div style="font-size: 13px; color: #555; letter-spacing: 2px; max-width: 300px;">WHERE SHADOWS BECOME STORIES</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Logo Hero Statico con Tagline</h3>
+      <p>Logo grande centrato con tagline. Elegante e minimale. Glow rosso sottile. Nessun video necessario — subito operativo.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background: #000; padding: 40px; min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+        <!-- Film strip bg -->
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, #000 0%, #0a0a0a 100%);"></div>
+        <!-- Floating film frames -->
+        <div style="position: absolute; top: 10%; left: 5%; width: 80px; height: 50px; border: 1px solid rgba(255,255,255,0.08); border-radius: 2px; transform: rotate(-5deg);"></div>
+        <div style="position: absolute; top: 25%; right: 10%; width: 100px; height: 60px; border: 1px solid rgba(255,255,255,0.06); border-radius: 2px; transform: rotate(3deg);"></div>
+        <div style="position: absolute; bottom: 15%; left: 15%; width: 90px; height: 55px; border: 1px solid rgba(255,255,255,0.05); border-radius: 2px; transform: rotate(-2deg);"></div>
+        <!-- Featured project overlay -->
+        <div style="position: relative; z-index: 1; text-align: center;">
+          <div style="font-size: 10px; letter-spacing: 4px; color: #555; margin-bottom: 15px;">LATEST PROJECT</div>
+          <div style="font-size: 28px; font-weight: 900; color: #fff; letter-spacing: -1px;">THE SHADOWS WITHIN</div>
+          <div style="font-size: 11px; color: #666; margin-top: 8px; letter-spacing: 2px;">HORROR FEATURE • 2024</div>
+          <div style="margin-top: 20px; display: flex; gap: 12px; justify-content: center;">
+            <div style="padding: 8px 20px; border: 1px solid rgba(255,255,255,0.2); color: #ccc; font-size: 11px; letter-spacing: 1px;">WATCH TRAILER</div>
+            <div style="padding: 8px 20px; background: rgba(255,255,255,0.08); color: #ccc; font-size: 11px; letter-spacing: 1px;">VIEW PROJECT</div>
+          </div>
+        </div>
+        <!-- Bottom logo -->
+        <div style="position: absolute; bottom: 15px; left: 50%; transform: translateX(-50%); z-index: 1;">
+          <div style="font-size: 9px; letter-spacing: 4px; color: #333;">SOUTHLIGHT PICTURES</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Featured Project Hero</h3>
+      <p>L'ultimo progetto in primo piano come hero, con il branding SouthLight in overlay. Dinamico — cambia con ogni nuovo progetto. Richiede contenuto reale o mock convincente.</p>
+    </div>
+  </div>
+</div>

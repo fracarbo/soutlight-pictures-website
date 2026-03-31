@@ -1,0 +1,148 @@
+<h2>Design Finale — SouthLight Pictures</h2>
+<p class="subtitle">Riepilogo completo prima di procedere con la spec</p>
+
+<!-- Site Structure -->
+<div class="section">
+  <h3>Struttura del Sito</h3>
+  <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
+    <div style="flex: 1; min-width: 180px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 16px;">
+      <div style="font-size: 11px; letter-spacing: 2px; color: #d9a938; margin-bottom: 10px;">HOMEPAGE /</div>
+      <div style="font-size: 12px; color: #aaa; line-height: 2.2;">
+        <div style="padding: 4px 8px; background: rgba(255,255,255,0.04); border-radius: 3px; margin-bottom: 3px;">Header (nav fisso)</div>
+        <div style="padding: 4px 8px; background: rgba(217,169,56,0.1); border: 1px solid rgba(217,169,56,0.2); border-radius: 3px; margin-bottom: 3px;">Hero — Video Splash</div>
+        <div style="padding: 4px 8px; background: rgba(255,255,255,0.04); border-radius: 3px; margin-bottom: 3px;">Projects Highlights (3)</div>
+        <div style="padding: 4px 8px; background: rgba(255,255,255,0.04); border-radius: 3px; margin-bottom: 3px;">About preview</div>
+        <div style="padding: 4px 8px; background: rgba(255,255,255,0.04); border-radius: 3px; margin-bottom: 3px;">Contact preview</div>
+        <div style="padding: 4px 8px; background: rgba(255,255,255,0.04); border-radius: 3px;">Footer</div>
+      </div>
+    </div>
+    <div style="flex: 1; min-width: 180px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 16px;">
+      <div style="font-size: 11px; letter-spacing: 2px; color: #d9a938; margin-bottom: 10px;">PAGINE DEDICATE</div>
+      <div style="font-size: 12px; color: #aaa; line-height: 2.2;">
+        <div style="padding: 4px 8px; background: rgba(217,169,56,0.08); border: 1px solid rgba(217,169,56,0.12); border-radius: 3px; margin-bottom: 3px;">/projects — Full-bleed list</div>
+        <div style="padding: 4px 8px; background: rgba(217,169,56,0.08); border: 1px solid rgba(217,169,56,0.12); border-radius: 3px; margin-bottom: 3px;">/about — Chi siamo + Alex Caruso</div>
+        <div style="padding: 4px 8px; background: rgba(217,169,56,0.08); border: 1px solid rgba(217,169,56,0.12); border-radius: 3px;">/contact — Form completo</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<div class="section" style="margin-top: 28px;">
+  <h3>Navigazione</h3>
+  <div style="margin-top: 12px; background: rgba(0,0,0,0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-size: 16px; font-weight: 900; color: #fff; letter-spacing: -0.5px;">SOUTHLIGHT</div>
+    <div style="display: flex; gap: 20px;">
+      <span style="font-size: 12px; color: #888; border-bottom: 1px solid #d9a938; padding-bottom: 2px;">Projects</span>
+      <span style="font-size: 12px; color: #888;">About</span>
+      <span style="font-size: 12px; color: #888;">Contact</span>
+    </div>
+  </div>
+  <div style="font-size: 11px; color: #555; margin-top: 6px;">Tutti i link puntano alle pagine dedicate (/projects, /about, /contact)</div>
+</div>
+
+<!-- Color Palette -->
+<div class="section" style="margin-top: 28px;">
+  <h3>Palette — Amber Gold</h3>
+  <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px;">
+    <div style="text-align: center;">
+      <div style="width: 50px; height: 50px; background: #000; border: 1px solid #333; border-radius: 6px;"></div>
+      <div style="font-size: 10px; color: #666; margin-top: 4px;">Black<br>#000000</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 50px; height: 50px; background: #0a0a0a; border: 1px solid #333; border-radius: 6px;"></div>
+      <div style="font-size: 10px; color: #666; margin-top: 4px;">Near Black<br>#0A0A0A</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 50px; height: 50px; background: #111; border: 1px solid #333; border-radius: 6px;"></div>
+      <div style="font-size: 10px; color: #666; margin-top: 4px;">Dark Gray<br>#111111</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 50px; height: 50px; background: #ffffff; border-radius: 6px;"></div>
+      <div style="font-size: 10px; color: #666; margin-top: 4px;">White<br>#FFFFFF</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 50px; height: 50px; background: #d9a938; border-radius: 6px;"></div>
+      <div style="font-size: 10px; color: #666; margin-top: 4px;">Amber<br>#D9A938</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 50px; height: 50px; background: #b8912e; border-radius: 6px;"></div>
+      <div style="font-size: 10px; color: #666; margin-top: 4px;">Amber Dark<br>#B8912E</div>
+    </div>
+    <div style="text-align: center;">
+      <div style="width: 50px; height: 50px; background: rgba(217,169,56,0.15); border: 1px solid rgba(217,169,56,0.3); border-radius: 6px;"></div>
+      <div style="font-size: 10px; color: #666; margin-top: 4px;">Amber Glow<br>15% opacity</div>
+    </div>
+  </div>
+</div>
+
+<!-- Components -->
+<div class="section" style="margin-top: 28px;">
+  <h3>File da Creare</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 6px; margin-top: 12px; font-size: 12px;">
+    <div style="padding: 8px 12px; background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.12); border-radius: 4px;">
+      <span style="color: #4ade80;">RISCRIVI</span> <span style="color: #aaa;">Layout.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.12); border-radius: 4px;">
+      <span style="color: #4ade80;">RISCRIVI</span> <span style="color: #aaa;">Header.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.12); border-radius: 4px;">
+      <span style="color: #4ade80;">RISCRIVI</span> <span style="color: #aaa;">Hero.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.12); border-radius: 4px;">
+      <span style="color: #4ade80;">RISCRIVI</span> <span style="color: #aaa;">Projects.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.12); border-radius: 4px;">
+      <span style="color: #4ade80;">RISCRIVI</span> <span style="color: #aaa;">About.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(74,222,128,0.06); border: 1px solid rgba(74,222,128,0.12); border-radius: 4px;">
+      <span style="color: #4ade80;">RISCRIVI</span> <span style="color: #aaa;">Footer.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.12); border-radius: 4px;">
+      <span style="color: #60a5fa;">NUOVO</span> <span style="color: #aaa;">Contact.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.12); border-radius: 4px;">
+      <span style="color: #60a5fa;">NUOVO</span> <span style="color: #aaa;">pages/projects.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.12); border-radius: 4px;">
+      <span style="color: #60a5fa;">NUOVO</span> <span style="color: #aaa;">pages/about.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(59,130,246,0.06); border: 1px solid rgba(59,130,246,0.12); border-radius: 4px;">
+      <span style="color: #60a5fa;">NUOVO</span> <span style="color: #aaa;">pages/contact.astro</span>
+    </div>
+    <div style="padding: 8px 12px; background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.12); border-radius: 4px;">
+      <span style="color: #f87171;">ELIMINA</span> <span style="color: #aaa;">Welcome.astro</span>
+    </div>
+  </div>
+</div>
+
+<!-- Key Decisions -->
+<div class="section" style="margin-top: 28px;">
+  <h3>Decisioni Chiave</h3>
+  <div style="margin-top: 12px; font-size: 13px; color: #aaa; line-height: 2;">
+    <div style="display: flex; align-items: baseline; gap: 8px;">
+      <span style="color: #d9a938; font-size: 11px;">&#9654;</span> Approccio ibrido: homepage con highlights + pagine dedicate
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 8px;">
+      <span style="color: #d9a938; font-size: 11px;">&#9654;</span> Hero con video splash (placeholder animato CSS per ora)
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 8px;">
+      <span style="color: #d9a938; font-size: 11px;">&#9654;</span> Navigazione: Projects, About, Contact (no News, no TV)
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 8px;">
+      <span style="color: #d9a938; font-size: 11px;">&#9654;</span> Palette Amber Gold (#D9A938) su base nera
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 8px;">
+      <span style="color: #d9a938; font-size: 11px;">&#9654;</span> Projects full-bleed list (non griglia)
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 8px;">
+      <span style="color: #d9a938; font-size: 11px;">&#9654;</span> Contact con form (backend TBD)
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 8px;">
+      <span style="color: #d9a938; font-size: 11px;">&#9654;</span> Contenuto mock — nessun progetto reale per ora
+    </div>
+    <div style="display: flex; align-items: baseline; gap: 8px;">
+      <span style="color: #d9a938; font-size: 11px;">&#9654;</span> Fondatore: Alex Caruso
+    </div>
+  </div>
+</div>

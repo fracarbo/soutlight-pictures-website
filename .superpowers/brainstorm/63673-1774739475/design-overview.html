@@ -1,0 +1,119 @@
+<h2>Design — SouthLight Pictures Website</h2>
+<p class="subtitle">Architettura ibrida: homepage + pagina Projects dedicata</p>
+
+<div class="section">
+  <h3>Struttura del Sito</h3>
+  <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px;">
+    <!-- Homepage -->
+    <div style="flex: 1; min-width: 220px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 16px;">
+      <div style="font-size: 11px; letter-spacing: 2px; color: #4ade80; margin-bottom: 8px;">HOMEPAGE /</div>
+      <div style="font-size: 13px; color: #ccc; line-height: 2;">
+        <div style="padding: 6px 10px; background: rgba(255,255,255,0.04); border-radius: 4px; margin-bottom: 4px;">Header (nav fisso)</div>
+        <div style="padding: 6px 10px; background: rgba(200,60,20,0.1); border: 1px solid rgba(200,60,20,0.2); border-radius: 4px; margin-bottom: 4px;">Hero — Video Splash</div>
+        <div style="padding: 6px 10px; background: rgba(255,255,255,0.04); border-radius: 4px; margin-bottom: 4px;">Projects Highlights (3 progetti)</div>
+        <div style="padding: 6px 10px; background: rgba(255,255,255,0.04); border-radius: 4px; margin-bottom: 4px;">About — Chi siamo</div>
+        <div style="padding: 6px 10px; background: rgba(255,255,255,0.04); border-radius: 4px; margin-bottom: 4px;">Contact — Form</div>
+        <div style="padding: 6px 10px; background: rgba(255,255,255,0.04); border-radius: 4px;">Footer</div>
+      </div>
+    </div>
+    <!-- Projects page -->
+    <div style="flex: 1; min-width: 220px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 16px;">
+      <div style="font-size: 11px; letter-spacing: 2px; color: #f59e0b; margin-bottom: 8px;">PROJECTS /projects</div>
+      <div style="font-size: 13px; color: #ccc; line-height: 2;">
+        <div style="padding: 6px 10px; background: rgba(255,255,255,0.04); border-radius: 4px; margin-bottom: 4px;">Header (nav fisso)</div>
+        <div style="padding: 6px 10px; background: rgba(255,255,255,0.04); border-radius: 4px; margin-bottom: 4px;">Page Title — "Our Work"</div>
+        <div style="padding: 6px 10px; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.2); border-radius: 4px; margin-bottom: 4px;">Full-bleed Project List (tutti)</div>
+        <div style="padding: 6px 10px; background: rgba(255,255,255,0.04); border-radius: 4px;">Footer</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 32px;">
+  <h3>Navigazione</h3>
+  <div style="margin-top: 12px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 16px; display: flex; justify-content: space-between; align-items: center;">
+    <div style="font-size: 18px; font-weight: 900; letter-spacing: -0.5px; color: #fff;">SOUTHLIGHT</div>
+    <div style="display: flex; gap: 24px;">
+      <span style="font-size: 13px; color: #aaa;">Projects</span>
+      <span style="font-size: 13px; color: #aaa;">News</span>
+      <span style="font-size: 13px; color: #aaa;">About</span>
+      <span style="font-size: 13px; color: #aaa;">Contact</span>
+    </div>
+  </div>
+  <div style="margin-top: 8px; font-size: 12px; color: #666;">
+    Projects → /projects (pagina dedicata) · News → #news (anchor homepage) · About → #about (anchor homepage) · Contact → #contact (anchor homepage)
+  </div>
+</div>
+
+<div class="section" style="margin-top: 32px;">
+  <h3>Componenti da Creare/Riscrivere</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; margin-top: 12px;">
+    <div style="padding: 10px 14px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #4ade80;">RISCRIVI</span><span style="color: #aaa;"> Layout.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #4ade80;">RISCRIVI</span><span style="color: #aaa;"> Header.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #4ade80;">RISCRIVI</span><span style="color: #aaa;"> Hero.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #4ade80;">RISCRIVI</span><span style="color: #aaa;"> Projects.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #4ade80;">RISCRIVI</span><span style="color: #aaa;"> About.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #4ade80;">RISCRIVI</span><span style="color: #aaa;"> Footer.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #60a5fa;">NUOVO</span><span style="color: #aaa;"> Contact.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #60a5fa;">NUOVO</span><span style="color: #aaa;"> News.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #60a5fa;">NUOVO</span><span style="color: #aaa;"> pages/projects.astro</span>
+    </div>
+    <div style="padding: 10px 14px; background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.15); border-radius: 6px; font-size: 12px;">
+      <span style="color: #f87171;">ELIMINA</span><span style="color: #aaa;"> Welcome.astro</span>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 32px;">
+  <h3>Design System</h3>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+    <div style="background: rgba(255,255,255,0.03); border-radius: 8px; padding: 16px;">
+      <div style="font-size: 11px; letter-spacing: 2px; color: #888; margin-bottom: 10px;">COLORI</div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <div style="text-align: center;">
+          <div style="width: 40px; height: 40px; background: #000; border: 1px solid #333; border-radius: 6px;"></div>
+          <div style="font-size: 10px; color: #666; margin-top: 4px;">#000</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 40px; height: 40px; background: #111; border: 1px solid #333; border-radius: 6px;"></div>
+          <div style="font-size: 10px; color: #666; margin-top: 4px;">#111</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 40px; height: 40px; background: #fff; border-radius: 6px;"></div>
+          <div style="font-size: 10px; color: #666; margin-top: 4px;">#FFF</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 40px; height: 40px; background: #dc2626; border-radius: 6px;"></div>
+          <div style="font-size: 10px; color: #666; margin-top: 4px;">Red 600</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 40px; height: 40px; background: #ea580c; border-radius: 6px;"></div>
+          <div style="font-size: 10px; color: #666; margin-top: 4px;">Orange 600</div>
+        </div>
+      </div>
+    </div>
+    <div style="background: rgba(255,255,255,0.03); border-radius: 8px; padding: 16px;">
+      <div style="font-size: 11px; letter-spacing: 2px; color: #888; margin-bottom: 10px;">TIPOGRAFIA</div>
+      <div style="font-size: 24px; font-weight: 900; color: #fff; letter-spacing: -1px;">Inter Black</div>
+      <div style="font-size: 14px; font-weight: 300; color: #aaa; margin-top: 4px;">Inter Light per body text</div>
+      <div style="font-size: 11px; letter-spacing: 4px; color: #666; margin-top: 8px;">LETTER-SPACING PER LABEL</div>
+    </div>
+  </div>
+</div>
