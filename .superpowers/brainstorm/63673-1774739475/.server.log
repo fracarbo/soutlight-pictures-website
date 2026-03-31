@@ -1,10 +1,10 @@
-{"type":"server-started","port":59051,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:59051","screen_dir":"/Users/fcarbonetto/Desktop/Carbo/Dev/SouthLight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475"}
-{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/SouthLight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/hero-style.html"}
+{"type":"server-started","port":59051,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:59051","screen_dir":"/Users/fcarbonetto/Desktop/Carbo/Dev/soutlight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475"}
+{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/soutlight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/hero-style.html"}
 {"source":"user-event","type":"click","text":"A PRODUCTION COMPANY\n          SOUTHLIGHT\n          PICTURES\n        \n        \n        \n          \n            \n          \n        \n      \n    \n    \n      A — Video Splash (come Atomic Monster)\n      Fullscreen video/animazione del logo come intro. Atmosfera cinematica. Richiede un video del logo da produrre.","choice":"a","id":null,"timestamp":1774739903505}
-{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/SouthLight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/waiting.html"}
-{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/SouthLight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/approaches.html"}
-{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/SouthLight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/design-overview.html"}
-{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/SouthLight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/color-palettes.html"}
-{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/SouthLight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/design-final.html"}
-{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/SouthLight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/waiting-2.html"}
+{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/soutlight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/waiting.html"}
+{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/soutlight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/approaches.html"}
+{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/soutlight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/design-overview.html"}
+{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/soutlight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/color-palettes.html"}
+{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/soutlight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/design-final.html"}
+{"type":"screen-added","file":"/Users/fcarbonetto/Desktop/Carbo/Dev/soutlight Pictures/soutlight-pictures-website/.superpowers/brainstorm/63673-1774739475/waiting-2.html"}
 {"type":"server-stopped","reason":"idle timeout"}

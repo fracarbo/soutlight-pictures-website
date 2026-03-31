@@ -2,33 +2,40 @@
 const currentPath = Astro.url.pathname;
 
 const navLinks = [
-  { label: 'Projects', href: '/southlight-pictures-website/projects' },
-  { label: 'About', href: '/southlight-pictures-website/about' },
-  { label: 'Contact', href: '/southlight-pictures-website/contact' },
+  { label: "Projects", href: "/soutlight-pictures-website/projects" },
+  { label: "About", href: "/soutlight-pictures-website/about" },
+  { label: "Contact", href: "/soutlight-pictures-website/contact" },
 ];
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+<header
+  class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10"
+>
   <nav class="container mx-auto px-6 py-4">
     <div class="flex items-center justify-between">
-      <a href="/southlight-pictures-website/" class="text-2xl font-black tracking-tighter hover:text-amber transition-colors">
+      <a
+        href="/soutlight-pictures-website/"
+        class="text-2xl font-black tracking-tighter hover:text-amber transition-colors"
+      >
         SOUTHLIGHT
       </a>
 
       <div class="hidden md:flex items-center space-x-8">
-        {navLinks.map((link) => (
-          <a
-            href={link.href}
-            class:list={[
-              'text-sm font-medium transition-colors',
-              currentPath === link.href || currentPath === link.href + '/'
-                ? 'text-amber border-b border-amber pb-1'
-                : 'text-gray-400 hover:text-white',
-            ]}
-          >
-            {link.label}
-          </a>
-        ))}
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class:list={[
+                "text-sm font-medium transition-colors",
+                currentPath === link.href || currentPath === link.href + "/"
+                  ? "text-amber border-b border-amber pb-1"
+                  : "text-gray-400 hover:text-white",
+              ]}
+            >
+              {link.label}
+            </a>
+          ))
+        }
       </div>
 
       <button
@@ -36,8 +43,17 @@ const navLinks = [
         class="md:hidden text-white"
         aria-label="Toggle menu"
       >
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
     </div>
@@ -45,53 +61,62 @@ const navLinks = [
 </header>
 
 <!-- Mobile overlay menu -->
-<div id="mobile-menu" class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-lg hidden flex-col items-center justify-center">
+<div
+  id="mobile-menu"
+  class="fixed inset-0 z-[60] bg-black/95 backdrop-blur-lg hidden flex-col items-center justify-center"
+>
   <button
     id="mobile-menu-close"
     class="absolute top-6 right-6 text-white"
     aria-label="Close menu"
   >
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"></path>
     </svg>
   </button>
 
   <nav class="flex flex-col items-center space-y-8">
-    {navLinks.map((link) => (
-      <a
-        href={link.href}
-        class:list={[
-          'text-3xl font-black tracking-tighter transition-colors',
-          currentPath === link.href || currentPath === link.href + '/'
-            ? 'text-amber'
-            : 'text-white hover:text-amber',
-        ]}
-      >
-        {link.label}
-      </a>
-    ))}
+    {
+      navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            "text-3xl font-black tracking-tighter transition-colors",
+            currentPath === link.href || currentPath === link.href + "/"
+              ? "text-amber"
+              : "text-white hover:text-amber",
+          ]}
+        >
+          {link.label}
+        </a>
+      ))
+    }
   </nav>
 </div>
 
 <script>
-  const btn = document.getElementById('mobile-menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  const close = document.getElementById('mobile-menu-close');
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  const close = document.getElementById("mobile-menu-close");
 
-  btn?.addEventListener('click', () => {
-    menu?.classList.remove('hidden');
-    menu?.classList.add('flex');
+  btn?.addEventListener("click", () => {
+    menu?.classList.remove("hidden");
+    menu?.classList.add("flex");
   });
 
-  close?.addEventListener('click', () => {
-    menu?.classList.add('hidden');
-    menu?.classList.remove('flex');
+  close?.addEventListener("click", () => {
+    menu?.classList.add("hidden");
+    menu?.classList.remove("flex");
   });
 
-  menu?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      menu?.classList.add('hidden');
-      menu?.classList.remove('flex');
+  menu?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu?.classList.add("hidden");
+      menu?.classList.remove("flex");
     });
   });
 </script>
