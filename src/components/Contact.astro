@@ -1,17 +1,83 @@
 ---
 ---
 
-<section id="contact" class="py-24 bg-black">
-  <div class="container mx-auto px-6 text-center max-w-2xl">
-    <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-6">GET IN TOUCH</h2>
-    <p class="text-lg text-gray-400 mb-10">
-      Interested in working with us? We'd love to hear from you.
+<section id="contact" class="pt-24 pb-24 bg-black">
+  <div class="container mx-auto px-6 max-w-2xl">
+    <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-center">CONTACT</h1>
+    <p class="text-lg text-gray-400 mb-12 text-center">
+      Have a project in mind? Drop us a line and we'll get back to you.
     </p>
-    <a
-      href="/contact"
-      class="inline-block px-8 py-4 bg-amber text-black font-semibold rounded-full hover:bg-amber-dark transition-colors"
-    >
-      Contact Us
-    </a>
+
+    <form class="space-y-6">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full px-4 py-3 bg-[#111] border border-white/10 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent transition-colors"
+          placeholder="Your name"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full px-4 py-3 bg-[#111] border border-white/10 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent transition-colors"
+          placeholder="your@email.com"
+        />
+      </div>
+
+      <div>
+        <label for="subject" class="block text-sm font-medium text-gray-400 mb-2">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          required
+          class="w-full px-4 py-3 bg-[#111] border border-white/10 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent transition-colors"
+          placeholder="What's this about?"
+        />
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          class="w-full px-4 py-3 bg-[#111] border border-white/10 rounded-lg text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-amber focus:border-transparent transition-colors resize-none"
+          placeholder="Tell us about your project..."
+        ></textarea>
+      </div>
+
+      <div class="flex items-start gap-4 p-5 bg-white/5 rounded-lg border border-white/10 mt-6">
+        <input
+          id="disclaimer"
+          name="disclaimer"
+          type="checkbox"
+          required
+          class="mt-1 w-5 h-5 rounded border-gray-600 bg-black text-amber accent-[#FFBF00] cursor-pointer"
+        />
+        <label for="disclaimer" class="text-sm text-gray-400 leading-relaxed cursor-pointer select-none">
+          SouthLight Pictures does not accept any unsolicited submissions. If you have sent information on a project, your submission was not reviewed and has been deleted. Please do not send any additional information regarding your unsolicited project.
+          <br /><br />
+          Thank you for understanding.
+        </label>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full py-4 bg-amber text-black font-semibold rounded-lg hover:bg-amber-dark transition-colors mt-2"
+      >
+        Send Message
+      </button>
+    </form>
   </div>
 </section>

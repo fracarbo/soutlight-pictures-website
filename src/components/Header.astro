@@ -2,9 +2,7 @@
 const currentPath = Astro.url.pathname;
 
 const navLinks = [
-  { label: "Projects", href: "/soutlight-pictures-website/projects" },
-  { label: "About", href: "/soutlight-pictures-website/about" },
-  { label: "Contact", href: "/soutlight-pictures-website/contact" },
+  { label: "Contact", href: "#contact" },
 ];
 ---
 
@@ -15,9 +13,9 @@ const navLinks = [
     <div class="flex items-center justify-between">
       <a
         href="/soutlight-pictures-website/"
-        class="text-2xl font-black tracking-tighter hover:text-amber transition-colors"
+        class="transition-opacity hover:opacity-80"
       >
-        SOUTHLIGHT
+        <img src="/soutlight-pictures-website/logo.png" alt="SouthLight Pictures" class="h-12 w-auto" />
       </a>
 
       <div class="hidden md:flex items-center space-x-8">
@@ -25,12 +23,7 @@ const navLinks = [
           navLinks.map((link) => (
             <a
               href={link.href}
-              class:list={[
-                "text-sm font-medium transition-colors",
-                currentPath === link.href || currentPath === link.href + "/"
-                  ? "text-amber border-b border-amber pb-1"
-                  : "text-gray-400 hover:text-white",
-              ]}
+              class="text-sm font-medium text-gray-400 hover:text-white transition-colors"
             >
               {link.label}
             </a>
@@ -84,12 +77,7 @@ const navLinks = [
       navLinks.map((link) => (
         <a
           href={link.href}
-          class:list={[
-            "text-3xl font-black tracking-tighter transition-colors",
-            currentPath === link.href || currentPath === link.href + "/"
-              ? "text-amber"
-              : "text-white hover:text-amber",
-          ]}
+          class="text-3xl font-black tracking-tighter text-white hover:text-amber transition-colors"
         >
           {link.label}
         </a>
