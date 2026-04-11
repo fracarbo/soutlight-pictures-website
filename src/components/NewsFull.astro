@@ -1,0 +1,45 @@
+---
+import { news } from '../data/news';
+---
+
+<section class="pt-24 pb-24 bg-black">
+  <div class="container mx-auto px-6">
+    <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">NEWS</h1>
+    <p class="text-lg text-gray-400 mb-16 max-w-xl">
+      Press coverage and features on SouthLight Pictures and founder Alex Caruso.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {news.map((item) => (
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group flex flex-col bg-[#111] border border-white/10 rounded-xl p-8 hover:border-amber/40 transition-colors"
+        >
+          <div class="flex items-center justify-between mb-6">
+            <span class="text-xs font-semibold tracking-widest uppercase text-amber">
+              {item.publication}
+            </span>
+            <span class="text-xs text-gray-600">{item.date}</span>
+          </div>
+
+          <h2 class="text-xl font-black tracking-tight text-white mb-4 group-hover:text-amber transition-colors">
+            {item.title}
+          </h2>
+
+          <p class="text-sm text-gray-400 leading-relaxed flex-1">
+            {item.description}
+          </p>
+
+          <div class="mt-8 flex items-center gap-2 text-sm font-medium text-gray-500 group-hover:text-white transition-colors">
+            Read More
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
