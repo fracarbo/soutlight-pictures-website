@@ -1,8 +1,8 @@
 ---
-const currentPath = Astro.url.pathname;
-
 const navLinks = [
-  { label: "Contact", href: "#contact" },
+  { label: "Films", href: "/soutlight-pictures-website/projects" },
+  { label: "About", href: "/soutlight-pictures-website/about" },
+  { label: "Contact", href: "/soutlight-pictures-website/contact" },
 ];
 ---
 
@@ -13,9 +13,9 @@ const navLinks = [
     <div class="flex items-center justify-between">
       <a
         href="/soutlight-pictures-website/"
-        class="transition-opacity hover:opacity-80"
+        class="text-white font-black text-xl tracking-tight hover:opacity-80 transition-opacity"
       >
-        <img src="/soutlight-pictures-website/logo.png" alt="SouthLight Pictures" class="h-12 w-auto" />
+        SOUTHLIGHT
       </a>
 
       <div class="hidden md:flex items-center space-x-8">
