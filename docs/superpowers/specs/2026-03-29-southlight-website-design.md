@@ -189,8 +189,8 @@ Mock project data lives in `src/data/projects.ts` as a single exported array. Bo
 
 All project data is placeholder. Six mock projects:
 
-1. The Shadows Within — Horror Feature, 2024
-2. Echoes of Silence — Thriller Series, 2024
+1. The Shadows Within — Horror Feature, In development
+2. Echoes of Silence — Thriller Series, In development
 3. Nightmare Protocol — Sci-Fi Horror, 2023
 4. The Last Séance — Supernatural, 2023
 5. Dark Waters Rise — Horror Feature, 2023

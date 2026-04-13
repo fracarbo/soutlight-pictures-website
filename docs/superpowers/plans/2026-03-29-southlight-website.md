@@ -108,13 +108,13 @@ export const projects: Project[] = [
   {
     title: 'The Shadows Within',
     category: 'Horror Feature',
-    year: '2024',
+    year: 'In development',
     image: 'https://images.pexels.com/photos/1666471/pexels-photo-1666471.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     title: 'Echoes of Silence',
     category: 'Thriller Series',
-    year: '2024',
+    year: 'In development',
     image: 'https://images.pexels.com/photos/2249528/pexels-photo-2249528.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {

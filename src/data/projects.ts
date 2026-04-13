@@ -3,25 +3,29 @@ export interface Project {
   category: string;
   year: string;
   image: string;
+  logo: string;
 }
 
 export const projects: Project[] = [
   {
     title: "A Father's Hand",
-    category: 'Drama',
-    year: '2024',
-    image: 'https://images.pexels.com/photos/1666471/pexels-photo-1666471.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Faith & Drama',
+    year: 'In development',
+    image: '/soutlight-pictures-website/films/a-fathers-hand/cover.png',
+    logo: '/soutlight-pictures-website/films/a-fathers-hand/logo-dark.webp',
   },
   {
     title: 'The Lady In White',
-    category: 'Supernatural Thriller',
-    year: '2024',
-    image: 'https://images.pexels.com/photos/2249528/pexels-photo-2249528.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Horror',
+    year: 'In development',
+    image: '/soutlight-pictures-website/films/the-lady-in-white/cover.png',
+    logo: '/soutlight-pictures-website/films/the-lady-in-white/logo.webp',
   },
   {
     title: 'Him, The Detective',
-    category: 'Mystery Thriller',
-    year: '2024',
-    image: 'https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=800',
+    category: 'Thriller & Crime',
+    year: 'In development',
+    image: '/soutlight-pictures-website/films/him-the-detective/cover.png',
+    logo: '/soutlight-pictures-website/films/him-the-detective/logo.webp',
   },
 ];
