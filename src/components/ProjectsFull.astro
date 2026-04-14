@@ -2,6 +2,7 @@
 import { projects } from '../data/projects';
 ---
 
+
 <section class="bg-black pt-24">
   <div class="mb-16 px-6 container mx-auto">
     <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-4">OUR WORK</h1>
@@ -11,7 +12,7 @@ import { projects } from '../data/projects';
   <div class="space-y-1">
     {projects.map((project, index) => (
       <div
-        class="group relative overflow-hidden cursor-pointer h-96 md:h-[500px] project-card"
+        class="group relative overflow-hidden cursor-pointer h-[25vh] md:h-[56vw] md:max-h-[85vh] project-card"
         data-index={index}
         role="button"
         tabindex="0"
@@ -20,7 +21,7 @@ import { projects } from '../data/projects';
         <img
           src={project.image}
           alt={project.title}
-          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          class="w-full h-full object-cover"
           loading="lazy"
         />
         <div class="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black/90 to-transparent" />
@@ -28,21 +29,12 @@ import { projects } from '../data/projects';
         <!-- Hover overlay -->
         <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500" />
 
-        <!-- Play / info hint -->
-        <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div class="w-16 h-16 rounded-full border-2 border-white/80 flex items-center justify-center backdrop-blur-sm bg-black/30">
-            <svg class="w-6 h-6 text-white -translate-x-0.25" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-end pb-16 md:pb-20">
+        <div class="absolute inset-0 p-8 md:p-12 flex flex-col justify-center">
           {/* <p class="text-sm md:text-base text-gray-300">{project.category} &bull; {project.year}</p> */}
           <img
             src={project.logo}
             alt={project.title}
-            class="h-8 md:h-10 w-auto object-contain object-left transition-transform duration-500 group-hover:-translate-y-1"
+            class="parallax-logo w-48 md:w-[420px] h-auto object-contain object-left"
           />
         </div>
 
@@ -77,7 +69,7 @@ import { projects } from '../data/projects';
   <!-- Modal card -->
   <div
     id="modal-card"
-    class="relative w-full max-w-3xl max-h-[90vh] overflow-hidden rounded-xl shadow-2xl opacity-0 scale-95 transition-all duration-300"
+    class="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-xl shadow-2xl opacity-0 scale-95 transition-all duration-300"
     style="background: #141414;"
   >
     <!-- Hero image area -->
@@ -217,4 +209,43 @@ import { projects } from '../data/projects';
       closeModal();
     }
   });
+
+  // Parallax on logos — offset relative to card's position in viewport
+  // When card center is at viewport center → 0. Card scrolls up → logo shifts down (lags behind)
+  const parallaxLogos = document.querySelectorAll('.parallax-logo');
+  const SPEED = 0.4;
+
+  let currentY = Array(parallaxLogos.length).fill(null);
+  let rafId = null;
+
+  function getTargets() {
+    const vh = window.innerHeight;
+    return Array.from(parallaxLogos).map((logo) => {
+      const card = logo.closest('.project-card');
+      const rect = card.getBoundingClientRect();
+      const cardCenter = rect.top + rect.height / 2;
+      // distance of card center from viewport center, multiplied by speed
+      return (vh / 2 - cardCenter) * SPEED;
+    });
+  }
+
+  function animate() {
+    const targets = getTargets();
+    let needsUpdate = false;
+    parallaxLogos.forEach((logo, i) => {
+      if (currentY[i] === null) currentY[i] = targets[i];
+      currentY[i] += (targets[i] - currentY[i]) * 0.1;
+      logo.style.transform = `translateY(${currentY[i].toFixed(2)}px)`;
+      if (Math.abs(targets[i] - currentY[i]) > 0.1) needsUpdate = true;
+    });
+    if (needsUpdate) rafId = requestAnimationFrame(animate);
+    else rafId = null;
+  }
+
+  function onScroll() {
+    if (!rafId) rafId = requestAnimationFrame(animate);
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  animate();
 </script>
