@@ -1,0 +1,134 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Privacy Policy — SouthLight Pictures">
+  <Header />
+
+  <main class="min-h-screen bg-black pt-32 pb-24 px-6">
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Back link -->
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-gray-500 hover:text-white transition-colors mb-16 group"
+      >
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back to home
+      </a>
+
+      <!-- Header -->
+      <div class="mb-16 border-b border-white/10 pb-12">
+        <p class="text-xs font-medium tracking-[0.3em] uppercase text-red-500 mb-4">Legal</p>
+        <h1 class="text-5xl md:text-6xl font-black tracking-tighter text-white leading-none mb-6">
+          Privacy<br/>Policy
+        </h1>
+        <p class="text-gray-500 text-sm">
+          Last updated: April 2025 &nbsp;·&nbsp; Pursuant to Art. 13 GDPR (EU Reg. 2016/679)
+        </p>
+      </div>
+
+      <!-- Content -->
+      <div class="prose-policy space-y-12 text-gray-400 text-sm leading-relaxed">
+
+        <section>
+          <h2 class="text-white font-bold text-base tracking-wide uppercase mb-4 flex items-start gap-3">
+            <span class="text-red-600 font-black tabular-nums">01</span>
+            Data Controller
+          </h2>
+          <p>
+            The Data Controller is <strong class="text-white">SouthLight Pictures</strong>, founded by Alex Caruso.
+            <br/>For any privacy-related inquiry, please contact us at:
+            <a href="mailto:info@southlightpictures.com" class="text-white hover:text-red-400 transition-colors underline underline-offset-4 decoration-white/20 hover:decoration-red-400">
+              info@southlightpictures.com
+            </a>
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-white font-bold text-base tracking-wide uppercase mb-4 flex items-start gap-3">
+            <span class="text-red-600 font-black tabular-nums">02</span>
+            Data Collected
+          </h2>
+          <p>
+            This is a static website. No data is stored in automated databases. The contact form
+            works by opening the user's local mail client (e.g. Outlook, Gmail). The only data
+            collected is what the user voluntarily provides when sending a message:
+          </p>
+          <ul class="mt-4 space-y-2 list-none pl-0">
+            {[
+              "Sender's email address",
+              "Any personal data included in the subject or body of the message",
+            ].map(item => (
+              <li class="flex items-start gap-3">
+                <span class="mt-1.5 w-1 h-1 rounded-full bg-red-600 flex-shrink-0"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="text-white font-bold text-base tracking-wide uppercase mb-4 flex items-start gap-3">
+            <span class="text-red-600 font-black tabular-nums">03</span>
+            Purpose & Legal Basis
+          </h2>
+          <p>
+            Data is processed solely to respond to contact or information requests submitted by the user.
+            The legal basis is the performance of pre-contractual or contractual measures at the request
+            of the data subject (Art. 6(1)(b) GDPR).
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-white font-bold text-base tracking-wide uppercase mb-4 flex items-start gap-3">
+            <span class="text-red-600 font-black tabular-nums">04</span>
+            Processing & Retention
+          </h2>
+          <p>
+            Data is received as email messages and stored on the Data Controller's systems only for
+            the time strictly necessary to handle the request. It is not shared with third parties
+            and is not used for marketing or profiling purposes.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-white font-bold text-base tracking-wide uppercase mb-4 flex items-start gap-3">
+            <span class="text-red-600 font-black tabular-nums">05</span>
+            Your Rights
+          </h2>
+          <p>
+            At any time, you may request access to, rectification of, or erasure of your personal data
+            by writing to the email address listed in Section 01. You also have the right to lodge a
+            complaint with the competent supervisory authority.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="text-white font-bold text-base tracking-wide uppercase mb-4 flex items-start gap-3">
+            <span class="text-red-600 font-black tabular-nums">06</span>
+            Cookies
+          </h2>
+          <p>
+            This website does not use profiling cookies, third-party cookies, or tracking tools of
+            any kind.
+          </p>
+        </section>
+
+      </div>
+
+      <!-- Divider -->
+      <div class="mt-16 pt-8 border-t border-white/10 text-xs text-gray-600 flex flex-col sm:flex-row justify-between gap-2">
+        <span>&copy; {new Date().getFullYear()} SouthLight Pictures. All rights reserved.</span>
+        <a href="/" class="hover:text-gray-400 transition-colors">southlightpictures.com</a>
+      </div>
+
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
