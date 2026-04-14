@@ -15,7 +15,7 @@ export const projects: Project[] = [
     image: '/films/a-fathers-hand/cover.png',
     logo: '/films/a-fathers-hand/logo-dark.webp',
     description:
-      'A deeply personal story of faith, forgiveness, and the enduring bond between a father and his child. When a man on the edge of despair finds himself confronted with the legacy of his own father, he must choose between the past that haunts him and the future he has yet to build.',
+      'A deeply moving story inspired by true events — an intimate exploration of faith, purpose, and the quiet power of compassion. At its heart lies the journey of a devoted priest who, against all odds, chooses to stand beside a troubled young girl when the world has all but turned away from her. The film unfolds as a testament to unwavering belief — not just in God, but in humanity itself. Rich with emotional depth, A Father\'s Hand is more than a story — it\'s a reflection on love that endures, forgiveness that heals, and the quiet strength it takes to do what is right when it is hardest.',
   },
   {
     title: 'The Lady In White',
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     image: '/films/the-lady-in-white/cover.png',
     logo: '/films/the-lady-in-white/logo.webp',
     description:
-      'In a forgotten town cloaked in perpetual fog, a figure in white has haunted the marshlands for over a century. When a young woman inherits her grandmother\'s crumbling estate, she begins to uncover the chilling truth behind the legend — and why the Lady in White has been waiting for her.',
+      'For over two centuries, a shadow has clung to the streets of Benton — a curse never broken. When night falls, she appears… a woman in white, drifting through the darkness, searching for something lost. No one knows what she truly wants. Only that when she finds you, it\'s already too late. When a family moves from Seattle to Benton, they must confront an ancient evil that feeds on fear, grief, and the past itself… or risk losing their children to it forever. The Lady in White is a chilling descent into dread — where suspense bleeds into the supernatural, and the line between the living and the damned slowly disappears.',
   },
   {
     title: 'Him, The Detective',
@@ -33,6 +33,6 @@ export const projects: Project[] = [
     image: '/films/him-the-detective/cover.png',
     logo: '/films/him-the-detective/logo.webp',
     description:
-      'A veteran detective with a fractured past is pulled back into the shadows when a serial killer begins leaving messages meant only for him. As the line between hunter and hunted blurs, he must confront the darkest corners of his own psyche before the city pays the price.',
+      'Gideon Black is a former CIA operative. A man forged in shadows, trained to see what others miss, and to act without hesitation. But when a string of brutal homicides begins to surface, something about them feels… personal. Drawn back into a world he thought he left behind, Gideon sets out to hunt the one pulling the strings — the head of the snake. Yet the deeper he digs, the more the lines begin to blur. Allies become suspects. Truth turns into illusion. And the past he buried long ago begins to claw its way back into the light. A journey into betrayal, memory, and the cost of secrets that refuse to stay hidden. Will Gideon Black uncover the truth… or become just another piece of it?',
   },
 ];
